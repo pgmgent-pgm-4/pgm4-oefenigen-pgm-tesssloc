@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --gap: 20px;
+}
+
+.list {
+    display: flex;
+    max-width: 50rem;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: var(--gap);
+}
+
+.card {
+    flex-basis: 1 1 calc(33% - var(--gap));
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    padding: 0.66rem;
+}
