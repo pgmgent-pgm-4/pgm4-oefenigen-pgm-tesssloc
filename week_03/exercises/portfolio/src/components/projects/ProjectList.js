@@ -6,17 +6,17 @@ export default function ProjectList() {
         {
             title: 'Project 1',
             date: 'juli 2023',
-            content: 'This was aproject about something.'
+            content: 'This was a project about something.'
         },
         {
             title: 'Project 2',
             date: 'oktober 2023',
-            content: 'This was aproject about something else.'
+            content: 'This was a project about something else.'
         },
         {
             title: 'Project 3',
             date: 'december 2023',
-            content: 'This was aproject about something entirely different.'
+            content: 'This was a project about something entirely different.'
         },
     ]
   return (
