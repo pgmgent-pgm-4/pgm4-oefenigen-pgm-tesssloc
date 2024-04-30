@@ -21,7 +21,7 @@ export default function ProjectList() {
     ]
   return (
     <div>
-        {projects.map((project) => {<Project title={project.title} date={project.date} content={project.content}/>})}
+        {projects.map((project) => (<Project title={project.title} date={project.date} content={project.content}/>))}
     </div>
   )
 }
