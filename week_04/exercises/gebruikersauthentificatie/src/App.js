@@ -3,6 +3,7 @@ import './App.css';
 import Root from './layouts/Root';
 import { Error, Home, Login } from './pages';
 import { ROUTES } from './routes/routes';
+import UserArea from './context/UserContext';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Root />} errorElement={<Error />}>
@@ -12,7 +13,11 @@ const router = createBrowserRouter(createRoutesFromElements(
 ))
 
 function App() {
-  return <RouterProvider router={router} />
+  return (
+    <UserArea>
+      <RouterProvider router={router} />
+    </UserArea>
+  )
 }
 
 export default App;
